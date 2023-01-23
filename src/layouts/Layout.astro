@@ -1,0 +1,82 @@
+---
+import Sidebar from '@components/Sidebar.vue';
+import { ArrowUp } from '@icons';
+
+const { title, description } = Astro.props.frontmatter;
+const url = Astro.url
+const { pathname } = url
+---
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description}>
+		<title>{`${title} - Apuntes JS`}</title>
+	</head>
+	<body 
+		class={`bg-slate-700 bg-gradient-to-r from-slate-700 to-slate-800 text-white 
+		dark:bg-orange-100 dark:from-orange-100 dark:to-orange-200 dark:text-gray-900
+		lg:grid grid-cols-[1fr_4fr] gap-x-4 transition-colors ease-in-out`}
+	>
+		<Sidebar client:load pathname={pathname} />
+		<main>
+			<article class="max-w-[90ch] px-6 py-4">
+				<slot />
+				<hr>
+			</article>
+			<div class="w-10 h-10 rounded-full shadow-md bg-slate-600 dark:bg-orange-100 p-4 flex items-center justify-center fixed bottom-8 right-8 md:right-20">
+				<a href="#" class="text-2xl" title="Volver arriba">
+					<ArrowUp />
+				</a>
+			</div>
+		</main>
+	</body>
+</html>
+
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
+	html{
+		scroll-behavior: smooth;
+	}
+
+	main article h1 {
+		@apply text-4xl font-bold text-center mt-4 mb-6
+	}
+
+	main article h2 {
+		@apply text-3xl font-bold my-4
+	}
+
+	main article h3 {
+		@apply text-2xl font-bold my-3
+	}
+
+	main article p {
+		@apply my-3
+	}
+
+	main article a {
+		@apply underline underline-offset-2 decoration-blue-200
+	}
+
+	main article pre {
+		@apply w-fit max-w-full overflow-x-auto px-4 py-2 rounded-lg my-4
+	}
+
+	main article pre code {
+		font-family: 'Fira Code', monospace;
+	}
+
+	main article hr {
+		@apply h-1 border-none my-6
+	}
+
+	main article ul {
+		@apply list-disc ml-8
+	}
+</style>
