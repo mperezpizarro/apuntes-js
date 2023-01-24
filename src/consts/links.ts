@@ -16,4 +16,5 @@ export const links: LinkType[] = [
     {href: '/09', label: '09 - Ventanas'},
     {href: '/10', label: '10 - Bucle while'},
     {href: '/11', label: '11 - Introducción al DOM'},
+    {href: '/12', label: '12 - Funciones'},
 ]
