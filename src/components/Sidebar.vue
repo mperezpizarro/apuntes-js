@@ -12,7 +12,7 @@
         </div>
         <aside 
             :class="isHidden ? 'hidden' : 'block'" 
-            class="fixed top-0 left-0 z-10 w-full min-h-screen h-full px-6 py-4 bg-slate-700 dark:bg-orange-100 lg:static lg:block"
+            class="fixed top-0 left-0 z-10 w-full min-h-screen h-full overflow-y-auto px-6 py-4 bg-slate-700 dark:bg-orange-100 lg:static lg:block"
         >
             <nav>
                 <ul class="flex flex-col gap-y-4">
