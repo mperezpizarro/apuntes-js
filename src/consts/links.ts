@@ -18,5 +18,5 @@ export const links: LinkType[] = [
     {href: '/11', label: '11 - Introducción al DOM'},
     {href: '/12', label: '12 - Funciones'},
     {href: '/13', label: '13 - Parámetros Rest'},
-    {href: '/14', label: '14 - Funciones flecha'},
+    {href: '/14', label: '14 - Funciones anónimas'},
 ]
