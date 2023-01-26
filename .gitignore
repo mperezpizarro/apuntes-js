@@ -21,3 +21,5 @@ pnpm-debug.log*
 
 # unused article
 src/pages/xx.md
+src/pages/yy.md
+src/pages/zz.md
