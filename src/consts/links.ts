@@ -22,4 +22,5 @@ export const links: LinkType[] = [
     {href: '/15', label: '15 - Funciones de flecha'},
     {href: '/16', label: '16 - Funciones de texto'},
     {href: '/17', label: '17 - Template strings'},
+    {href: '/18', label: '18 - Arrays'},
 ]
