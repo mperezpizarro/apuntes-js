@@ -23,4 +23,6 @@ export const links: LinkType[] = [
     {href: '/16', label: '16 - Funciones de texto'},
     {href: '/17', label: '17 - Template strings'},
     {href: '/18', label: '18 - Arrays'},
+    {href: '/19', label: '19 - Métodos de Arrays'},
+    {href: '/20', label: '20 - Arrays multidimensionales'},
 ]
