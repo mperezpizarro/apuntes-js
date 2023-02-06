@@ -25,4 +25,5 @@ export const links: LinkType[] = [
     {href: '/18', label: '18 - Arrays'},
     {href: '/19', label: '19 - Métodos de Arrays'},
     {href: '/20', label: '20 - Arrays multidimensionales'},
+    {href: '/21', label: '21 - Document Object Model (DOM)'},
 ]
