@@ -1,6 +1,10 @@
 <script setup>
     import { Menu, Close, Sun, Moon } from '@icons'
     import { links } from '@consts/links';
+
+    const props = defineProps({
+        pathname: String
+    })
 </script>
 
 <template>
@@ -41,9 +45,6 @@
 
 <script>
     export default {
-        props: {
-            pathname: String
-        },
         data() {
             return {
                 isHidden: true,
